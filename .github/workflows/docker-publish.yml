@@ -34,4 +34,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/cicdapp:latest
             docker stop cicdapp || true
             docker rm cicdapp || true
-            docker run -d --name cicdapp -p 3000:3000 ${{ secrets.DOCKER_USERNAME }}/cicdapp:latest
+            docker run -d --name cicdapp -p 3030:3000 ${{ secrets.DOCKER_USERNAME }}/cicdapp:latest
