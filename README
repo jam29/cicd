@@ -1,0 +1,3 @@
+usermod -aG sudo student01
+sudo usermod -aG docker $USER
+newgrp docker
